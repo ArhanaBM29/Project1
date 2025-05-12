@@ -2,6 +2,9 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background:linear-gradient(pink,black);
+}
 
 .res-cont{
     width: 70%;
@@ -26,9 +29,9 @@
 
 .text h1{
     text-transform: capitalize;
-    text-decoration: none;
+    text-decoration:none;
     font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
     margin-top: 10px;
 }
 
@@ -36,26 +39,28 @@
     text-transform: capitalize;
     font-size: 130%;
     font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+     
 }
-
 .text h3{
-    font-size: 115%;
-    font-weight: bolder;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;
+    font-weight:bolder;
     margin-top: 10px;
-    text-decoration: underline;
+    font-style: oblique;
+    text-decoration:underline;
     text-transform: capitalize;
+     color:#00ffff;
 }
 
 .text h4{
     font-size: 110%;
     font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
     margin-top: 5px;
     margin-bottom: 10px;
     text-decoration: underline;
     text-transform: capitalize;
+    color:#00ffff;
 }
 
 .text p{
@@ -68,7 +73,7 @@
 }
 
 .text li{
-    list-style: circle;
+    list-style:disc;
     margin-left: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
@@ -83,11 +88,16 @@
 .img img{
     width: 300px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 200px;
     margin: 110px;
    
 }
 
 .text span{
-    color: violet;
+    color: rgb(163, 27, 17);
+}
+.text .ah a{
+    text-decoration:underline;
+    color:goldenrod;
+    text-transform: capitalize;
 }
