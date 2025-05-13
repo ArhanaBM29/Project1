@@ -1,78 +1,123 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(pink, black);
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .res-cont {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   border: 2px solid black;
   display: flex;
   border-radius: 20px;
   background-color: black;
-  color: white;
-  margin: 50px auto;
+  color: aliceblue;
+  margin: 80px auto;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .text {
-  width: 50%;
+  width: 60%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.text h1 {
-  font-size: 40px;
-  margin-top: 10px;
-}
-
-.text h2 {
-  font-size: 24px;
-  font-style: italic;
-}
-
-.text h3 {
-  font-size: 28px;
-  color: cyan;
-  margin: 10px 0;
-  text-decoration: underline;
-}
-
-.text h4 {
-  margin-top: 15px;
-  text-decoration: underline;
-  color: cyan;
-}
-
-.text p {
-  margin: 10px 0;
-  text-align: justify;
-}
-
-.text li {
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-.text .ah {
-  margin-top: 15px;
-}
-
-.text .ah a {
-  color: gold;
-  text-decoration: underline;
-  margin-right: 15px;
+.img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img img {
   width: 300px;
   height: 300px;
-  border-radius: 200px;
-  margin-top: 150px;  /* Increased top margin */
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  border-radius: 50%;
+  margin-top: 60px;
+  object-fit: cover;
+  border: 3px solid #fff;
 }
 
+h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 130%;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-style: oblique;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #00ffff;
+}
+
+h4 {
+  font-size: 110%;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #00ffff;
+}
+
+p {
+  text-align: justify;
+  font-size: 90%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+span {
+  color: rgb(163, 27, 17);
+}
+
+.ah {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ah a {
+  text-decoration: underline;
+  color: goldenrod;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.box {
+  border: 1px solid #555;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
