@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    border: 2px solid black;
+    height: 500px;
+    width: 950px;
+    margin: 30px;
+    display: flex;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    
+}
+
+.container .resume {
+    
+    height: 500px;
+    width: 50%;
+}
+
+.resume h2 {
+    font-size: 30px;
+    margin: 10px ;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.resume h1 {
+    font-size: 33px;
+    margin: 010px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+span {
+    color: orange;
+    font-size: 35px;
+}
+
+.resume h3 {
+    font-size: 20px;
+    margin: 10px;
+    font-family: fantasy;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.resume p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.resume .tech {
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.resume .tech li {
+    list-style: square;
+    margin: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize ;
+}
+
+.resume h4 {
+    font-size: 18px;
+    margin: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.resume a {
+    margin: 30px 5px;
+    color: rgba(252, 214, 0, 0.781);
+    text-decoration: none;
+}
+.container .img{
+    width: 430px;
+    height:500px;
+    padding-top: 40px;
+    padding-left: 35px;
+}
