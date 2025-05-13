@@ -1,93 +1,132 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.res-cont{
-    width: 70%;
-    border: 2px solid black;
-    display: flex;
-    border-radius: 20px;
-    background-color: black;
-    color: aliceblue;
-    margin-left: 235px;
-    margin-right: 200px;
-    margin-top: 110px;
-    margin-bottom: 100px;
+body {
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.text{
-    
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+.res-cont {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #cddc39;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.text h1{
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 10px;
+.text {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.text h2{
-    text-transform: capitalize;
-    font-size: 130%;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.text h3{
-    font-size: 115%;
-    font-weight: bolder;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top: 10px;
-    text-decoration: underline;
-    text-transform: capitalize;
+.img img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+  border: 4px solid #4caf50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.text h4{
-    font-size: 110%;
-    font-weight: bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    text-transform: capitalize;
+h1 {
+  font-size: 36px;
+  font-style: italic;
+  color: #2196f3;
+  margin-top: 10px;
 }
 
-.text p{
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 90%;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+h2 {
+  font-size: 22px;
+  font-style: italic;
 }
 
-.text li{
-    list-style: circle;
-    margin-left: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+h3 {
+  font-size: 24px;
+  font-style: oblique;
+  color: #388e3c;
 }
 
-.text .ah{
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
+h4 {
+  font-size: 18px;
+  color: #673ab7;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 5px;
 }
 
-.img img{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    margin: 110px;
-   
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
-.text span{
-    color: orange;
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+span {
+  color: #e91e63;
+}
+
+.ah {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ah a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ff9800;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.ah a:hover {
+  color: #f44336;
+  text-decoration: underline;
+}
+
+.box {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text,
+  .img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .img img {
+    margin-top: 20px;
+  }
 }
