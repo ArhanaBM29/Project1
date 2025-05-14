@@ -6,24 +6,23 @@
 
 body {
   background: linear-gradient(pink, black);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .res-cont {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   border: 2px solid black;
   display: flex;
   border-radius: 20px;
   background-color: black;
   color: aliceblue;
-  margin: 80px auto;
+  margin-bottom: 50px;
   padding: 20px;
   flex-wrap: wrap;
 }
 
 .text {
-  width: 60%;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -31,61 +30,47 @@ body {
 }
 
 .img {
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .img img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-top: 60px;
   object-fit: cover;
   border: 3px solid #fff;
 }
 
 h1 {
-  text-transform: capitalize;
   font-size: 40px;
   font-style: italic;
   margin-top: 10px;
 }
 
 h2 {
-  text-transform: capitalize;
-  font-size: 130%;
-  font-weight: bolder;
+  font-size: 28px;
   font-style: italic;
 }
 
 h3 {
-  font-size: 30px;
-  font-weight: bolder;
-  margin-top: 10px;
-  font-style: oblique;
-  text-decoration: underline;
-  text-transform: capitalize;
+  font-size: 26px;
   color: #00ffff;
+  text-decoration: underline;
 }
 
 h4 {
-  font-size: 110%;
-  font-weight: bold;
-  font-style: italic;
-  margin-bottom: 10px;
-  text-decoration: underline;
-  text-transform: capitalize;
+  font-size: 20px;
   color: #00ffff;
+  text-decoration: underline;
 }
 
 p {
   text-align: justify;
-  font-size: 90%;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 ul {
@@ -93,31 +78,29 @@ ul {
 }
 
 li {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 6px;
 }
 
 span {
-  color: rgb(163, 27, 17);
+  color: crimson;
 }
 
 .ah {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .ah a {
   text-decoration: underline;
   color: goldenrod;
-  text-transform: capitalize;
-  font-size: 16px;
 }
 
 .box {
-  border: 1px solid #555;
-  padding: 15px;
-  border-radius: 10px;
   background-color: #1c1c1c;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #555;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
