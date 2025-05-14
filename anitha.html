@@ -2,79 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achhammagari Anitha | Java Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achhammagari Anitha Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="anitha.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="profile.jpg" alt="Anitha's Profile Photo" class="profile-img" />
-      <h1>Achhammagari Anitha</h1>
-      <p class="tagline">Java Full Stack Developer (Fresher)</p>
-      <a href="mailto:achhammaani@gmail.com" class="email-btn">Contact Me</a>
+
+  <!-- Navigation Tabs -->
+  <ul class="nav nav-pills nav-justified bg-primary text-white p-2 mb-3" id="portfolioTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+        type="button" role="tab" aria-controls="home" aria-selected="true">
+        Home
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+        type="button" role="tab" aria-controls="profile" aria-selected="false">
+        Profile
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+        type="button" role="tab" aria-controls="contact" aria-selected="false">
+        Contact
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content container">
+
+    <!-- HOME TAB -->
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <!-- Search Bar -->
+      <div class="mb-3">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search in portfolio...">
+      </div>
+
+      <div class="res-cont">
+        <div class="text">
+          <div class="box">
+            <h2>Hello,</h2>
+            <h1>I am <span>Achhammagari Anitha</span></h1>
+            <h3>Java Full Stack Developer (Fresher)</h3>
+            <p>I’m passionate about designing and developing modern web applications. Proficient in Java, SQL, HTML, CSS, JavaScript and JDBC. I enjoy learning and solving real-world problems through clean and efficient code.</p>
+          </div>
+
+          <div class="box">
+            <h4>Technical Skills</h4>
+            <ul>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+              <li>JDBC</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h4>Projects</h4>
+            <ul>
+              <li><strong>Library Management System:</strong> Java-based application for managing books and student records using JDBC and MySQL.</li>
+              <li><strong>Responsive Portfolio Website:</strong> This portfolio website built using HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h4>Education</h4>
+            <ul>
+              <li><strong>B.Tech in Computer Science</strong> – XYZ University (2021-2025)</li>
+              <li>CGPA: 8.3/10</li>
+            </ul>
+          </div>
+
+          <div class="box ah">
+            <a href="#" target="_blank">Resume</a>
+            <a href="https://linkedin.com/in/achhamma-anitha" target="_blank">LinkedIn</a>
+            <a href="https://github.com/anitha-fs" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
 
-  <nav class="navbar container">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- PROFILE TAB -->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="res-cont">
+        <div class="text">
+          <div class="box">
+            <h2>Profile</h2>
+            <p>Hello! I'm Anitha, a motivated and detail-oriented Java Full Stack Developer currently pursuing my B.Tech in Computer Science. I love building responsive web apps and improving my skills every day.</p>
 
-  <section id="about" class="container section">
-    <h2>About Me</h2>
-    <p>
-      I'm an aspiring Java Full Stack Developer skilled in designing and developing modern web applications.
-      Proficient in Java, SQL, HTML, CSS, and JavaScript, I enjoy building intuitive, clean, and responsive applications. I'm a quick learner and eager to contribute to team success through hard work and attention to detail.
-    </p>
-  </section>
+            <!-- Hobbies Dropdown -->
+            <div class="dropdown mt-3">
+              <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                My Hobbies
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Coding</a></li>
+                <li><a class="dropdown-item" href="#">Reading Tech Blogs</a></li>
+                <li><a class="dropdown-item" href="#">Exploring New Tools</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-  <section id="skills" class="container section">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <span>Java</span>
-      <span>SQL</span>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>JDBC</span>
-      <span>Git & GitHub</span>
+        <div class="img">
+          <img src="profile.jpg" alt="Anitha's Photo" />
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section id="projects" class="container section">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Library Management System</h3>
-      <p>Java-based desktop application that manages books and student records using JDBC and MySQL.</p>
+    <!-- CONTACT TAB -->
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="res-cont">
+        <div class="text">
+          <div class="box">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:achhammaani@gmail.com">achhammaani@gmail.com</a></p>
+            <p>Phone: +91-7569228736</p>
+            <a href="anitha.html" class="btn btn-warning mt-3">← Back to Team</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="project-card">
-      <h3>Responsive Portfolio Website</h3>
-      <p>This portfolio itself is a fully responsive site built with HTML, CSS, and JavaScript to highlight my work and profile.</p>
-    </div>
-  </section>
 
-  <section id="education" class="container section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Bachelor of Technology</strong> in Computer Science – XYZ University (2021-2025)</li>
-      <li>CGPA: 8.3/10</li>
-    </ul>
-  </section>
+  </div>
 
-  <section id="contact" class="container section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:achhammaani@gmail.com">achhammaani@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/achhamma-anitha</a></p>
-    <p>GitHub: <a href="#">github.com/anitha-fs</a></p>
-    <a href="#" class="resume-btn">Download Resume</a>
-  </section>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
-  <footer>
-    <p>© 2025 Achhammagari Anitha | Java Full Stack Developer</p>
-  </footer>
+  <!-- Search Function -->
+  <script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+      const query = this.value.toLowerCase();
+      const boxes = document.querySelectorAll(".box");
+      boxes.forEach(box => {
+        const content = box.innerText.toLowerCase();
+        box.style.display = content.includes(query) ? "block" : "none";
+      });
+    });
+  </script>
+
 </body>
 </html>
